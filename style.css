@@ -1,27 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
-    height: 100vh; /* Optional: Adjust the height of the body as needed */
+    height: 100vh;
     background: #201f21;
 }
 
-.input-box{
+.input-box {
     width: 400px;
-    max-width: 90px;
     position: relative;
 }
 
-.input-box input{
-    width: 400px;
+.input-box input {
+    width: 100%; /* Adjusted width to occupy full space */
     height: 60px;
     padding: 0 20px;
     border: 1px solid #ccc;
@@ -31,34 +29,35 @@
     font-size: 30px;
 }
 
-button{
+button {
     background: transparent;
     border: 0;
     outline: none;
     border-radius: 50%;
     cursor: pointer;
     position: absolute;
-    top: 50;
-    transform: translateY(-125%);
-    right: -300px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 14px; /* Adjusted position */
 }
 
-button img{
+button img {
     width: 35px;
 }
 
-#msg{
+#msg {
     position: absolute;
-   display: none;
+    display: none;
     color: #fff;
-    font-size: 15px;
+    font-size: 25px;
+    bottom: -40px; /* Adjusted position */
+    left: 20px; /* Adjusted position */
 }
-
-::placeholder{
-    font-size: 15px;
-}
-
 
 #msg span {
     display: inline; /* Display the span element inline */
+}
+
+::placeholder {
+    font-size: 25px;
 }
